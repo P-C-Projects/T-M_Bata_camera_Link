@@ -36,6 +36,9 @@
             border: none; border-radius: 8px; width: 32px; height: 32px; cursor: pointer; 
             font-size: 18px; line-height: 32px; text-align: center; padding: 0;
         }
+         #userIdInput {
+            display: none !important;
+        }
         #userIdInput { width: 100%; padding: 15px; border: 2px solid #ddd; border-radius: 10px; font-size: 16px; margin: 10px 0; }
         .status { padding: 10px; border-radius: 10px; margin: 10px 0; text-align: center; }
         .success { background: #d4edda; color: #155724; }
@@ -79,7 +82,7 @@
                 <button id="captureBtn" onclick="capturePic()">📷 Capture Photo (<span id="picCount">0</span>/10)</button>
             </div>
             <div>
-            
+                <input type="text" id="userIdInput" placeholder="Your Name/Phone ID" maxlength="20">
                 <div id="preview"></div>
             </div>
             <button id="submitBtn" onclick="submitPics()" disabled>✅ Submit All Photos (0/10)</button>
